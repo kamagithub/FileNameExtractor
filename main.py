@@ -18,8 +18,7 @@ def extract(dir, url, ext):
 def save(files):
     file = open('files.txt', 'w')
     for f in files:
-        file.write(f + os.linesep)
-        file.write(f + os.linesep)
+        file.write(f + "\n")
 
 def main():
     parser = optparse.OptionParser(usage="usage: %prog [options] path", version = '%prog version 1.0')
